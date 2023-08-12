@@ -116,14 +116,185 @@ header .container-xl .carousel .carousel-inner .carousel-item .header__content .
   height: 183.395px;
   z-index: 1;
 }
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info {
+  padding-left: 64px;
+  height: 550px;
+}
 header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info h2 {
   color: var(--salat, #688800);
   font-family: Amatic SC;
   font-size: 36px;
+  padding-bottom: 32px;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info h1 {
+  font-size: 64px;
+  font-family: "AmaticSC-Regular";
+  padding-bottom: 32px;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info p {
+  width: 609px;
+  font-size: 18px;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .head__btn {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info button {
+  width: 143px;
+  height: 40px;
+  color: #BFD087;
+  border: 1px solid #BFD087;
+  background-color: white;
+  font-size: 18px;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .actived {
+  background-color: #BFD087;
+  color: black;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .see {
+  padding-top: 96px;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .see button {
+  width: 203px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: white;
+  transition: 1s;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .see button:hover {
+  background: var(--gradient-green-1, linear-gradient(321deg, #536614 0%, #97C20B 100%));
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .see button:hover a {
+  color: white;
+}
+header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info .see button a {
+  font-size: 18px;
+  text-align: center;
+  text-decoration-line: none;
+  transition: 1s;
+  color: #688800;
 }
 
 /*  
 ######################################################
 ################### header END #######################
+######################################################
+*/
+/*  
+######################################################
+################## Section Oil start #################
+######################################################
+*/
+.sec__oil .container-xl .oil {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: 1s;
+}
+.sec__oil .container-xl .oil h2 {
+  text-align: center;
+  color: var(--text, #4A4A4A);
+  font-size: 48px;
+  font-family: "AmaticSC-Regular";
+  padding-bottom: 64px;
+}
+.sec__oil .container-xl .oil .card {
+  width: 315px;
+  height: 590px;
+  background: #FFF;
+  box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.1);
+  border: none;
+  margin-bottom: 80px;
+  transition: 1s;
+}
+.sec__oil .container-xl .oil .card:hover .circle {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.sec__oil .container-xl .oil .card:hover img {
+  transform: rotate(9.542deg) scale(1.5);
+  width: 78px;
+  height: 294px;
+}
+.sec__oil .container-xl .oil .card:hover .card__oil button {
+  margin-top: 0px;
+}
+.sec__oil .container-xl .oil .card img {
+  width: 63px;
+  height: 229px;
+  background-image: no-repeat;
+  margin: 8px auto 31px;
+  z-index: 2;
+  transition: 1s;
+}
+.sec__oil .container-xl .oil .card .circle {
+  width: 252px;
+  height: 252px;
+  border-radius: 50%;
+  background: var(--gradient-green-1, linear-gradient(321deg, #536614 0%, #97C20B 100%));
+  box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: -5px;
+  left: 27px;
+  transition: 1s;
+  transform: scale(0);
+  opacity: 0;
+}
+.sec__oil .container-xl .oil .card .circle::after {
+  content: "";
+  border-radius: 50%;
+  background: var(--gradient-green-1, linear-gradient(321deg, #536614 0%, #97C20B 100%));
+  opacity: 0.2;
+  z-index: -3;
+  padding: 145px;
+  transition: 1s;
+}
+.sec__oil .container-xl .oil .card h5 {
+  color: var(--salat, #688800);
+  font-size: 24px;
+  font-family: "AmaticSC-Regular";
+  padding-bottom: 15px;
+}
+.sec__oil .container-xl .oil .card p {
+  font-size: 14px;
+  width: 100%;
+}
+.sec__oil .container-xl .oil .card .card__oil {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.sec__oil .container-xl .oil .card .card__oil button {
+  width: 146px;
+  height: 32px;
+  border-radius: 50px;
+  background-color: white;
+  transition: 1s;
+  border: 1px solid var(--salat, #688800);
+  margin-top: 70px;
+}
+.sec__oil .container-xl .oil .card .card__oil button:hover {
+  background: var(--gradient-green-1, linear-gradient(321deg, #536614 0%, #97C20B 100%));
+}
+.sec__oil .container-xl .oil .card .card__oil button:hover a {
+  color: white;
+}
+.sec__oil .container-xl .oil .card .card__oil button a {
+  font-size: 14px;
+  text-align: center;
+  text-decoration-line: none;
+  transition: 1s;
+  color: #688800;
+}
+
+/*  
+######################################################
+################# Section Oil END ####################
 ######################################################
 *//*# sourceMappingURL=style.css.map */
