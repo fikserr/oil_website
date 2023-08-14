@@ -297,4 +297,56 @@ header .container-xl .carousel .carousel-inner .carousel-item .header__content .
 ######################################################
 ################# Section Oil END ####################
 ######################################################
+*/
+.about .container-xl h5 {
+  color: var(--text, #4A4A4A);
+  text-align: center;
+  font-size: 48px;
+  font-family: "AmaticSC-Regular";
+}
+.about .container-xl .about__content {
+  display: flex;
+  position: relative;
+  padding-top: 48px;
+}
+.about .container-xl .about__content .box__content {
+  position: relative;
+}
+.about .container-xl .about__content .box__content img {
+  padding-left: 84px;
+  z-index: 3;
+}
+.about .container-xl .about__content .box__content .box__img {
+  width: 153px;
+  height: 357px;
+  background: var(--salat, #688800);
+  position: absolute;
+  top: 48px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.about .container-xl .title {
+  width: 609px;
+  height: 357px;
+  padding: 0 28px;
+  position: absolute;
+  background-color: white;
+  right: 100px;
+  top: 48px;
+}
+.about .container-xl .title h5 {
+  font-size: 32px;
+  font-family: "AmaticSC-Regular";
+  color: var(--text, #4A4A4A);
+  text-align: left;
+  padding-top: 48px;
+}
+.about .container-xl .title p {
+  width: 626px;
+}
+
+/*  
+######################################################
+################# Section About end ################
+######################################################
 *//*# sourceMappingURL=style.css.map */
