@@ -1,11 +1,16 @@
-@import url(css/fonts.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=El+Messiri&family=Roboto:ital,wght@1,300&display=swap');
+$amatic: 'Amatic SC', cursive;
+$elmessiri: 'El Messiri', sans-serif;
+$roboto: 'Roboto', sans-serif;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto-Regular";
-  list-style: none;
+  font-family: $roboto;
+ 
 }
 /*  
 ######################################################
@@ -56,12 +61,14 @@
           color: var(--salat, #688800);
         }
         li {
+          list-style: none;
           a {
             text-decoration-line: none;
-            font-family: "ElMessiri-Regular";
+            font-family: $elmessiri;
             color: var(--salat, #688800);
             text-align: center;
             font-size: 18px;
+            list-style: none;
           }
         }
       }
@@ -132,7 +139,7 @@ header {
               height: 550px;
                 h2{
                     color: var(--salat, #688800);
-                    font-family: Amatic SC;
+                    font-family: $amatic;
                     font-size: 36px;
                     padding-bottom: 32px;
 
@@ -140,7 +147,7 @@ header {
                   }
                   h1{
                     font-size: 64px;
-                    font-family: "AmaticSC-Regular";
+                    font-family: $amatic;
                     padding-bottom: 32px;
                   }
                   p{
@@ -221,7 +228,7 @@ header {
         text-align: center;
         color: var(--text, #4A4A4A);
         font-size: 48px;
-        font-family: "AmaticSC-Regular";
+        font-family: $amatic;
         padding-bottom: 64px;
         
       }
@@ -339,13 +346,24 @@ header {
 ################# Section Oil END ####################
 ######################################################
 */
+
+
+
+
+
+/*  
+######################################################
+################## Section About start################
+######################################################
+*/
 .about{
   .container-xl{
     h5{
       color: var(--text, #4A4A4A);
       text-align: center;
       font-size: 48px;
-      font-family: "AmaticSC-Regular";
+      font-family: $amatic;
+      overflow: hidden;
       
       }
    .about__content{
@@ -370,33 +388,321 @@ header {
         }
 
       }
-   }
-   .title{
-    width: 609px;
-    height: 357px;
-    padding: 0 28px;
-    position: absolute;
-    background-color: white;
-    right: 100px;
-    top: 48px;
-    h5{
-      font-size: 32px;
-      font-family: "AmaticSC-Regular";
-      color: var(--text, #4A4A4A);
-      text-align: left;  
-      padding-top: 48px;
-    }
-    p{
-      width: 626px;
+      .title{
+        width: 609px;
+        height: 357px;
+        padding: 0 28px;
+        position: absolute;
+        background-color: white;
+        margin-top: 48px;
+        right: 125px;
+        z-index: 3;
+        box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.10);
+        h5{
+          font-size: 32px;
+          font-family: $amatic ;
+          color: var(--text, #4A4A4A);
+          text-align: left;  
+          padding-top: 48px;
+        }
+        p{
+          width: 626px;
+    
+        }
+        
+       }
 
-    }
-   }
+
+       
+
+  
+
+   
 
   }
-}
+  .about__content2{
+    margin: 32px 0 82px;
 
+    display: flex;
+    position: relative;
+    .box__content2{
+      display: flex;
+      margin-top: 32px;
+      img{
+        padding-left: 84px;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        padding-right: 85px;
+      }
+      .box__img2{
+        position: absolute;
+        top: 84px;
+        right: 0px;
+        width: 153px;
+        height: 333px;
+        background: var(--salat, #688800);
+        z-index: -1;
+        opacity: 0.4;
+      }
+  
+    }
+    .title2{
+      width: 709px;
+      height: 333px;
+      padding: 0 48px 48px 48px;
+      background-color: white;
+      margin-top: 84px;
+      z-index: 3;
+      box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.10);
+      h5{
+        font-size: 32px;
+        font-family: $amatic ;
+        color: var(--text, #4A4A4A);
+        text-align: left;  
+        padding-top: 48px;
+        text-align: start;
+      }
+      p{
+        width: 626px;
+  
+      }
+      
+     }
+   }
+}
+}
 /*  
 ######################################################
 ################# Section About end ################
+######################################################
+*/
+
+
+
+
+
+
+/*  
+######################################################
+################ Section Reviews start ###############
+######################################################
+*/
+
+.Reviews{
+  .container-xl{
+    h5{
+      color: var(--text, #4A4A4A);
+      text-align: center;
+      font-size: 48px;
+      font-family: $amatic;
+      
+    }
+    ul{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 85px;
+      li{
+        color: #97C20B;
+        
+      }
+      .is-active{
+        color: #0a85cc;
+        box-shadow: 0px 0px 35px 0px rgba(190, 191, 183, 0.10);
+      }
+    
+    }
+    .reviews__images{
+      display: flex;
+      justify-content: center;
+      gap: 31px;
+      padding-bottom: 32px;
+      img{
+        width: 335px;
+        height: 461px;
+        box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+    
+    .delivry{
+      display: flex;
+      flex-direction: column;
+      row-gap: 64px;
+      margin-bottom: 80px;
+      .left__img{
+        position: absolute;
+        padding-top: 80px;
+        padding-left: 118px;
+        
+      }
+      .right__img{
+        position: absolute;
+        right: 0;
+        padding-right: 86px;
+        padding-top: 20px;
+      }
+      .left{
+        display: flex;
+        gap: 30px;
+        h5{
+          align-items: center;
+          margin: auto 0;
+        }
+        
+        .arrow__left{
+          width: 759px;
+          height: 123px;
+          background: #EDF4D2;
+          box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.10);
+          display: flex;
+          justify-content: end;
+         
+         .box{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 24px 32px;
+          row-gap: 16px;
+          i{
+            font-size: 30px;
+            color: #688800;
+          }
+          p{
+            color: var(--text, #4A4A4A);
+            font-size: 16px;
+          }
+         }
+        }
+      }
+
+
+      .right{
+        display: flex;
+        gap: 30px;
+        justify-content: end;
+        h5{
+          align-items: center;
+          margin: auto 0;
+        }
+        
+        .arrow__right{
+          width: 759px;
+          height: 123px;
+          background: #EDF4D2;
+          box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.10);
+         display: flex;
+         justify-content: end;
+         .box{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0 32px;
+          row-gap: 16px;
+          i{
+            font-size: 30px;
+            color: #688800;
+          }
+          p{
+            color: var(--text, #4A4A4A);
+            font-size: 16px;
+          }
+         }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*  
+######################################################
+################# Section Reviews end ################
+######################################################
+*/
+
+
+
+
+/*  
+######################################################
+################ Section CONTACT start ###############
+######################################################
+*/
+.contact{
+  .container-xl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h5{
+      color: var(--text, #4A4A4A);
+      text-align: center;
+      font-size: 48px;
+      font-family: $amatic;
+    }
+    .contact__img{
+      display: flex;
+      position: relative;
+      
+      .box{
+        width: 153px;
+        height: 424px;
+        opacity: 0.4;
+        background: var(--salat, #688800);
+        z-index: 1;
+        margin-top: 48px;
+        margin-left: 200px;
+        
+        
+      }
+      img{
+        z-index: 3;
+      }
+    }
+    .contact__title{
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      padding: 36px 36px 32px 32px;
+      margin-top: 48px;
+      row-gap: 40px;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.10);
+      .fa-solid, .fa-brands{
+        display: flex;
+        color: #688800;
+        gap: 20px;
+        p{
+          color: var(--text, #4A4A4A);
+          font-size: 16px;
+        }
+      }
+      button{
+        width: 222px;
+        height: 40px;
+        padding: 8px 48px;
+        border: 1px solid var(--salat, #688800);
+        background-color: white;
+        border-radius: 50px;
+        &:hover{
+          color: #FFF;
+          background-color: #688800;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*  
+######################################################
+################# Section Contact end ################
 ######################################################
 */

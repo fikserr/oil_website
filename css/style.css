@@ -1,10 +1,11 @@
-@import url(css/fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=El+Messiri&family=Roboto:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto-Regular";
-  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
 /*  
@@ -57,12 +58,16 @@
   padding-left: 28px;
   color: var(--salat, #688800);
 }
+.navbar .container-xl div ul li {
+  list-style: none;
+}
 .navbar .container-xl div ul li a {
   text-decoration-line: none;
-  font-family: "ElMessiri-Regular";
+  font-family: "El Messiri", sans-serif;
   color: var(--salat, #688800);
   text-align: center;
   font-size: 18px;
+  list-style: none;
 }
 
 /*  
@@ -122,13 +127,13 @@ header .container-xl .carousel .carousel-inner .carousel-item .header__content .
 }
 header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info h2 {
   color: var(--salat, #688800);
-  font-family: Amatic SC;
+  font-family: "Amatic SC", cursive;
   font-size: 36px;
   padding-bottom: 32px;
 }
 header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info h1 {
   font-size: 64px;
-  font-family: "AmaticSC-Regular";
+  font-family: "Amatic SC", cursive;
   padding-bottom: 32px;
 }
 header .container-xl .carousel .carousel-inner .carousel-item .header__content .header__info p {
@@ -196,7 +201,7 @@ header .container-xl .carousel .carousel-inner .carousel-item .header__content .
   text-align: center;
   color: var(--text, #4A4A4A);
   font-size: 48px;
-  font-family: "AmaticSC-Regular";
+  font-family: "Amatic SC", cursive;
   padding-bottom: 64px;
 }
 .sec__oil .container-xl .oil .card {
@@ -298,11 +303,17 @@ header .container-xl .carousel .carousel-inner .carousel-item .header__content .
 ################# Section Oil END ####################
 ######################################################
 */
+/*  
+######################################################
+################## Section About start################
+######################################################
+*/
 .about .container-xl h5 {
   color: var(--text, #4A4A4A);
   text-align: center;
   font-size: 48px;
-  font-family: "AmaticSC-Regular";
+  font-family: "Amatic SC", cursive;
+  overflow: hidden;
 }
 .about .container-xl .about__content {
   display: flex;
@@ -325,28 +336,270 @@ header .container-xl .carousel .carousel-inner .carousel-item .header__content .
   z-index: -1;
   opacity: 0.4;
 }
-.about .container-xl .title {
+.about .container-xl .about__content .title {
   width: 609px;
   height: 357px;
   padding: 0 28px;
   position: absolute;
   background-color: white;
-  right: 100px;
-  top: 48px;
+  margin-top: 48px;
+  right: 125px;
+  z-index: 3;
+  box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.1);
 }
-.about .container-xl .title h5 {
+.about .container-xl .about__content .title h5 {
   font-size: 32px;
-  font-family: "AmaticSC-Regular";
+  font-family: "Amatic SC", cursive;
   color: var(--text, #4A4A4A);
   text-align: left;
   padding-top: 48px;
 }
-.about .container-xl .title p {
+.about .container-xl .about__content .title p {
+  width: 626px;
+}
+.about .container-xl .about__content2 {
+  margin: 32px 0 82px;
+  display: flex;
+  position: relative;
+}
+.about .container-xl .about__content2 .box__content2 {
+  display: flex;
+  margin-top: 32px;
+}
+.about .container-xl .about__content2 .box__content2 img {
+  padding-left: 84px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  padding-right: 85px;
+}
+.about .container-xl .about__content2 .box__content2 .box__img2 {
+  position: absolute;
+  top: 84px;
+  right: 0px;
+  width: 153px;
+  height: 333px;
+  background: var(--salat, #688800);
+  z-index: -1;
+  opacity: 0.4;
+}
+.about .container-xl .about__content2 .title2 {
+  width: 709px;
+  height: 333px;
+  padding: 0 48px 48px 48px;
+  background-color: white;
+  margin-top: 84px;
+  z-index: 3;
+  box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.1);
+}
+.about .container-xl .about__content2 .title2 h5 {
+  font-size: 32px;
+  font-family: "Amatic SC", cursive;
+  color: var(--text, #4A4A4A);
+  text-align: left;
+  padding-top: 48px;
+  text-align: start;
+}
+.about .container-xl .about__content2 .title2 p {
   width: 626px;
 }
 
 /*  
 ######################################################
 ################# Section About end ################
+######################################################
+*/
+/*  
+######################################################
+################ Section Reviews start ###############
+######################################################
+*/
+.Reviews .container-xl h5 {
+  color: var(--text, #4A4A4A);
+  text-align: center;
+  font-size: 48px;
+  font-family: "Amatic SC", cursive;
+}
+.Reviews .container-xl ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 85px;
+}
+.Reviews .container-xl ul li {
+  color: #97C20B;
+}
+.Reviews .container-xl ul .is-active {
+  color: #0a85cc;
+  box-shadow: 0px 0px 35px 0px rgba(190, 191, 183, 0.1);
+}
+.Reviews .container-xl .reviews__images {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  padding-bottom: 32px;
+}
+.Reviews .container-xl .reviews__images img {
+  width: 335px;
+  height: 461px;
+  box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.Reviews .container-xl .delivry {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+  margin-bottom: 80px;
+}
+.Reviews .container-xl .delivry .left__img {
+  position: absolute;
+  padding-top: 80px;
+  padding-left: 118px;
+}
+.Reviews .container-xl .delivry .right__img {
+  position: absolute;
+  right: 0;
+  padding-right: 86px;
+  padding-top: 20px;
+}
+.Reviews .container-xl .delivry .left {
+  display: flex;
+  gap: 30px;
+}
+.Reviews .container-xl .delivry .left h5 {
+  align-items: center;
+  margin: auto 0;
+}
+.Reviews .container-xl .delivry .left .arrow__left {
+  width: 759px;
+  height: 123px;
+  background: #EDF4D2;
+  box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.1);
+  display: flex;
+  justify-content: end;
+}
+.Reviews .container-xl .delivry .left .arrow__left .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 32px;
+  row-gap: 16px;
+}
+.Reviews .container-xl .delivry .left .arrow__left .box i {
+  font-size: 30px;
+  color: #688800;
+}
+.Reviews .container-xl .delivry .left .arrow__left .box p {
+  color: var(--text, #4A4A4A);
+  font-size: 16px;
+}
+.Reviews .container-xl .delivry .right {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+}
+.Reviews .container-xl .delivry .right h5 {
+  align-items: center;
+  margin: auto 0;
+}
+.Reviews .container-xl .delivry .right .arrow__right {
+  width: 759px;
+  height: 123px;
+  background: #EDF4D2;
+  box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.1);
+  display: flex;
+  justify-content: end;
+}
+.Reviews .container-xl .delivry .right .arrow__right .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 32px;
+  row-gap: 16px;
+}
+.Reviews .container-xl .delivry .right .arrow__right .box i {
+  font-size: 30px;
+  color: #688800;
+}
+.Reviews .container-xl .delivry .right .arrow__right .box p {
+  color: var(--text, #4A4A4A);
+  font-size: 16px;
+}
+
+/*  
+######################################################
+################# Section Reviews end ################
+######################################################
+*/
+/*  
+######################################################
+################ Section CONTACT start ###############
+######################################################
+*/
+.contact .container-xl {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .container-xl h5 {
+  color: var(--text, #4A4A4A);
+  text-align: center;
+  font-size: 48px;
+  font-family: "Amatic SC", cursive;
+}
+.contact .container-xl .contact__img {
+  display: flex;
+  position: relative;
+}
+.contact .container-xl .contact__img .box {
+  width: 153px;
+  height: 424px;
+  opacity: 0.4;
+  background: var(--salat, #688800);
+  z-index: 1;
+  margin-top: 48px;
+  margin-left: 200px;
+}
+.contact .container-xl .contact__img img {
+  z-index: 3;
+}
+.contact .container-xl .contact__title {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 36px 32px 32px;
+  margin-top: 48px;
+  row-gap: 40px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  box-shadow: 10px 10px 35px 0px rgba(190, 191, 183, 0.1);
+}
+.contact .container-xl .contact__title .fa-solid, .contact .container-xl .contact__title .fa-brands {
+  display: flex;
+  color: #688800;
+  gap: 20px;
+}
+.contact .container-xl .contact__title .fa-solid p, .contact .container-xl .contact__title .fa-brands p {
+  color: var(--text, #4A4A4A);
+  font-size: 16px;
+}
+.contact .container-xl .contact__title button {
+  width: 222px;
+  height: 40px;
+  padding: 8px 48px;
+  border: 1px solid var(--salat, #688800);
+  background-color: white;
+  border-radius: 50px;
+}
+.contact .container-xl .contact__title button:hover {
+  color: #FFF;
+  background-color: #688800;
+}
+
+/*  
+######################################################
+################# Section Contact end ################
 ######################################################
 *//*# sourceMappingURL=style.css.map */
